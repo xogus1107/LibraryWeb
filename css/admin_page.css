@@ -8,6 +8,18 @@
 	margin: 0px 0px 0px -400px;
 }
 
+#log_out{
+    width: 100px;
+	height: 30px;
+	font-size: 18px;
+
+   position: absolute;
+   left: 80%;
+   top: 50%;
+   margin: -15px 0px 0px 0px;
+
+}
+
 #menu_area{
 	width: 780px;
 	height: 100px;

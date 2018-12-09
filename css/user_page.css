@@ -48,6 +48,18 @@
 	font-size: 18px;
 
    position: absolute;
+   left: 2%;
+   top: 50%;
+   margin: -15px 0px 0px 0px;
+
+}
+
+#log_out{
+    width: 100px;
+	height: 30px;
+	font-size: 18px;
+
+   position: absolute;
    left: 80%;
    top: 50%;
    margin: -15px 0px 0px 0px;
