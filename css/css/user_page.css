@@ -1,0 +1,55 @@
+#page_layout{
+	width: 800px;
+	height: 800px;
+	background-color: #E6E6E6;
+
+	position: absolute;
+	left: 50%;
+	margin: 0px 0px 0px -400px;
+}
+#menu_area{
+	width: 780px;
+	height: 50px;
+	background-color: #D8D8D8;
+
+	position: absolute;
+	left : 10px;
+	top : 10px;
+}
+#search_guide_text{
+	position: absolute;
+	left: 150px;
+
+}
+#search_textbox{
+	width: 300px;
+	height: 30px;
+	font-size: 18px;
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -15px 0px 0px -150px;
+}
+#search_button{
+	width: 50px;
+	height: 30px;
+	font-size: 18px;
+
+	position: absolute;
+	left: 70%;
+	top: 50%;
+	margin: -15px 0px 0px 0px;
+}
+
+
+
+#result_area{
+	width: 780px;
+	height: 720px;
+	background-color: #D8D8D8;
+
+	position: absolute;
+	left : 10px;
+	top : 70px;
+}
