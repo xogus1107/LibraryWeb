@@ -22,7 +22,8 @@
 }
 #id_overlap_check{
     position: absolute;
-    left 10
+    right: 1%;
+    top: 27%;
 }
 #sign_up_box{
 	width : 400px;
