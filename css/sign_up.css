@@ -1,0 +1,34 @@
+.left_box{
+    align: center;
+    background-color: #FFFFCC;
+    width: 130x;
+}
+
+#title{
+
+    left: 10%;
+}
+
+#table{
+    border:1px solid #444444;;
+    align: center;
+    position: absolute;
+    left: 10px;
+   }
+#sign_up_button{
+    position: absolute;
+    left :10px;
+    top : 80%;
+}
+
+#sign_up_box{
+	width : 400px;
+	height: 350px;
+	background-color: #E6E6E6;
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	margin: -100px 0px 0px -200px;
+	border: 1px solid #444444;
+
+}

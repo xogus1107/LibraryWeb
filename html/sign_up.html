@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "../css/sign_up.css">
+
+    <title>Sign_up</title>
+</head>
+<body>
+    <div id="sign_up_box">
+        <h3 id="title">회원가입</h3>
+            <form name="sign_up_input" action="../php/sign_up.php" method="post" >
+                <table id ="table">
+                    <tr>
+                        <td class="left_box">이름</td>
+                        <td><input type = "text" id = "name_input_textbox" name="input_name"/></td>
+                    </tr>
+                    <tr>
+                        <td class="left_box">ID</td>
+                        <td><input type="text" id="id_input_textbox" name="input_id"/></td>
+                        <!--
+                        <input type="submit" value="아이디 중복검사"/>
+                        -->
+                    </tr>
+                    <tr>
+                        <td class="left_box">Password</td>
+                        <td><input type="password" id="password_input_textbox" name="input_password"/>
+                    </tr>
+                    <tr>
+                        <td class = "left_box">Password확인</td>
+                        <td><input type="password" id="password_check" name="input_password_check"/></td>
+                    </tr>
+                    <tr>
+                        <td class = "left_box">생년월일</td>
+                        <td><input type="text" id = "birthday_input_textbox" name="input_birthday" placeholder="19941107"/>
+                    </tr>
+                    <tr>
+                        <td class = "left_box">주소</td>
+                        <td><input type="text" id="address_input_textbox" name = "input_address"placeholder="서울시 강서구 우현로28"/></td>
+                    </tr>
+                    <tr>
+                        <td class = "left_box">전화번호</td>
+                        <td><input type="text" id="phone_input_textbox" name = "input_phone" placeholder="01072812217"/></td>
+                    </tr>
+                </table>
+                <input type = "submit" value="가입하기" id="sign_up_button"/>
+            </form>
+    </div>
+</body>
+</html>
+
