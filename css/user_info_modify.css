@@ -1,0 +1,30 @@
+#table{
+    border:1px solid #444444;;
+    align: center;
+    position: absolute;
+    left: 10px;
+   }
+
+   .left_box{
+    align: center;
+    background-color: #FFFFCC;
+    width: 130x;
+}
+
+#modify_box{
+	width : 400px;
+	height: 250px;
+	background-color: #E6E6E6;
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	margin: -100px 0px 0px -200px;
+	border: 1px solid #444444;
+
+}
+
+#modify_button{
+    position: absolute;
+    left :10px;
+    top : 80%;
+}
