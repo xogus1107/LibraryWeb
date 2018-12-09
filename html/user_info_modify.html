@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "../css/user_info_modify.css">
+</head>
+<body>
+<div id="modify_box">
+    <h3>회원정보수정</h3>
+    <form name="sign_up_input" action="../php/sign_up.php" method="post" >
+        <table id ="table">
+                    <tr>
+                        <td class="left_box">이름</td>
+                        <td><input type = "text" value ="" id = "name_input_textbox" name="input_name"/></td>
+                    </tr>
+                    <tr>
+                        <td class = "left_box">생년월일</td>
+                        <td><input type="text" value ="" id = "birthday_input_textbox" name="input_birthday"/>
+                    </tr>
+                    <tr>
+                        <td class = "left_box">주소</td>
+                        <td><input type="text" value ="" id="address_input_textbox" name = "input_address"/></td>
+                    </tr>
+                    <tr>
+                        <td class = "left_box">전화번호</td>
+                        <td><input type="text" value ="" id="phone_input_textbox" name = "input_phone" /></td>
+                    </tr>
+                </table>
+                <input type = "submit" value="내정보수정" id="modify_button"/>
+            </form>
+</div>
+</body>
+</html>
