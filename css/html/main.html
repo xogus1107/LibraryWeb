@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel = "stylesheet" href = "../css/main.css">
+
+
+	</head>
+
+	<!-- -->
+	<body>
+		<div id = "login_box">
+			<p id = "main_title"> 도서관 </p>
+			<!-- post에는 input_id=(입력)&input_pw=(입력)형식으로 데이터 입력 -->
+			<form name = "login_input" action = "../php/login.php" method = "post">
+			<p id = "id_text">ID: </p><input id = "id_input_textbox" type = "text" name = "input_id">
+			<p id = "pw_text">PW: </p><input id = "pw_input_textbox" type = "password" name = "input_pw">
+			<input id = "login_button" class = "button" type = "submit" value = "로그인">
+			</form>
+			<input id = "sign_up_button" type = "button" value = "회원가입"> 
+			<input id = "find_idpw_button" type = "button" value = "ID/PW 찾기"> 
+
+
+		</div>
+
+
+	</body>
+
+
+	<script src="../js/main.js"/>
+</html>
