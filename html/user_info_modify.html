@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <link rel = "stylesheet" href = "../css/user_info_modify.css">
+    <title>내정보 수정</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../js/userInfoModifyForm.js"></script>
+
 </head>
 <body>
 <div id="modify_box">
     <h3>회원정보수정</h3>
-    <form name="sign_up_input" action="../php/userInfoModify.php" method="post" >
+    <form name="sign_up_input" action="../php/userInfoModify.php" method="post" onsubmit="return checkSubmit()">
         <table id ="table">
                     <tr>
                         <td class="left_box">이름</td>
