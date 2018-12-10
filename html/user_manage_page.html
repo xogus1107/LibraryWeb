@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <link rel = "stylesheet" href = "../css/user_manage_page.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js" ></script>
+    <script type="text/javascript" src="../js/userInfo.js"></script>
+
 </head>
 <body>
 
     <div id="user_info">
         <h3 id="title">내 정보</h3>
-        <p>이름: </p>
-        <p>생년월일: </p>
-        <p>주소:</p>
-        <p>전화번호:</p>
+        <p id="name">이름: </p>
+        <p id="birthday">생년월일: </p>
+        <p id="address">주소:</p>
+        <p id="phone_number">전화번호:</p>
          <input id = "user_info_modify" type="button" onclick="location.href='user_info_modify.html'" value="내 정보수정">
 
     </div>
