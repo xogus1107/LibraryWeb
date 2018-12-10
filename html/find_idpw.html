@@ -2,17 +2,17 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel = "stylesheet" href = "../css/find_idpw.css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+		<script type="text/javascript" src="../js/find.js"></script>
 	</head>
 
 	<body>
 		<div id = "page_layout">
 			<div id = "find_id_area">
 				<p> 아이디 찾기 </p>
-				<form name = "find_id" action = "../php/find_id.php" method = "post">
 					<p id = "text_findid"> 이름을 입력해주세요</p>
 					<input class = "textbox" id = "textbox_idname" type = "text" name = "input_id_name">
-					<input class = "button" id = "button_findid" type = "submit" value = "찾기"> 
-				</form>
+				<button id="button_findid" name=FindId onclick="findId()">찾기</button>
 
 
 			</div>
@@ -25,7 +25,7 @@
 					<p id = "text_findpw_ID"> 아이디를 입력해주세요</p>
 					<input class = "textbox" id = "textbox_pwid" type = "text" name = "input_pw_id">
 
-					<input class = "button" id = "button_findpw" type = "submit" value = "찾기"> 
+					<input class = "button" id = "button_findpw" type = "submit" value = "찾기">
 				</form>
 			</div>
 		</div>

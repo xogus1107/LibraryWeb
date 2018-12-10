@@ -10,7 +10,9 @@
 			<div id = "menu_area">
 				<input class = "menu_buttons" id = "book_manage_button" type="button" value = "책 관리">
 				<input class = "menu_buttons" id = "user_manage_button" type="button" value = "유저 관리">
-				<input id = "log_out" type="button" value="로그아웃">
+				<form name = "signOut" action = "../php/signOut.php" method = "post">
+					<input id = "log_out" type="submit" value="로그아웃">
+				</form>
 			</div>
 
 			<div id = "result_area">
