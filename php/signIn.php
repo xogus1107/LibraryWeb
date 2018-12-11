@@ -15,10 +15,8 @@
       else{
         header('Location: ../html/user_page.html');
       }
-      echo $_SESSION['ses_userid'].'님 안녕하세요';
-      echo '로그아웃 하기';
       }
       if($row == null){
-        echo '로그인 실패 아이디와 비밀번호가 일치하지 않습니다.';
+        header('Location: ../html/main.html');
       }
 ?>

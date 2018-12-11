@@ -1,10 +1,9 @@
 <html>
-	<head>
-		<meta charset="utf-8">
-		<link rel = "stylesheet" href = "../css/admin_page.css">
 
-	</head>
-
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../css/admin_page.css">
+</head>
 	<body>
 		<div id = "page_layout">
 			<div id = "menu_area">
@@ -12,15 +11,19 @@
 					   onclick="location.href='admin_page_book.html'">
 				<input class = "menu_buttons" id = "user_manage_button" type="button" value = "유저 관리"
 						onclick="location.href='admin_page_user.html'">
-				<input id = "log_out" type="button" value="로그아웃">
+				<form name="signOut" action="../php/signOut.php" method="post">
+					<input id="log_out" type="submit" value="로그아웃">
+				</form>
+
 			</div>
 
-			<div id = "result_area">
 
-			</div>
-
+		<div id="result_area">
 
 		</div>
-		<script src = "../js/admin_page.js"/>
+
+
+	</div>
+	<script src="../js/admin_page.js" />
 	</body>
 </html>
