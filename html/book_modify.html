@@ -3,42 +3,39 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="../css/sign_up.css">
-  <title>책 추가</title>
+  <link rel="stylesheet" href="../css/add_book.css">
+  <title>책 정보수정</title>
   <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 
-
-
-  <title>Sign_up</title>
 </head>
 
 <body>
   <div id="add_book_box">
-    <h3 id="title">책 데이터 추가</h3>
-    <form name="add_book_input" action="" method="post" onsubmit="">
+    <h3 id="title">책 정보 수정</h3>
+    <form name="modify_book_input" action="" method="post" onsubmit="">
       <table id="table">
           <tr>
           <td class="left_box">일련번호</td>
-          <td><input type="text" id="serialnumber_input_textbox" name="input_serialnumber"/>
+          <td>해당일련번호
         </tr>
         <tr>
           <td class="left_box">제목</td>
-          <td><input type="text" id="title_input_textbox" name="input_title" /></td>
+          <td><input type="text" id="title_input_textbox" name="input_title" value="해당정보"/></td>
         </tr>
         <tr>
           <td class="left_box">저자</td>
-          <td><input type="text" id="writer_input_textbox" name="input_writer" /></td>
+          <td><input type="text" id="writer_input_textbox" name="input_writer" value="해당정보"/></td>
         </tr>
         <tr>
           <td class="left_box">출판사</td>
-          <td><input type="text" id="publisher_input_textbox" name="input_publisher" />
+          <td><input type="text" id="publisher_input_textbox" name="input_publisher" value="해당정보"/>
         </tr>
         <tr>
           <td class="left_box">책 수</td>
-          <td><input type="text" id="bookcount_input_textbox" name="input_bookcount" /></td>
+          <td><input type="text" id="bookcount_input_textbox" name="input_bookcount" value="해당정보" /></td>
         </tr>
       </table>
-      <input type="submit" value="책 데이터 추가" id="add_book_button" />
+      <input type="submit" value="수정" id="modify_book_button" />
     </form>
   </div>
 </body>
