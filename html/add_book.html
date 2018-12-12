@@ -6,16 +6,14 @@
   <link rel="stylesheet" href="../css/add_book.css">
   <title>책 추가</title>
   <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+  <script type="text/javascript" src="../js/addBook.js"></script>
 
-
-
-  <title>Sign_up</title>
 </head>
 
 <body>
   <div id="add_book_box">
     <h3 id="title">책 데이터 추가</h3>
-    <form name="add_book_input" action="" method="post" onsubmit="">
+    <form name="add_book_input" action="../php/addBook.php" method="post" onsubmit="return checkSubmit()">
       <table id="table">
           <tr>
           <td class="left_box">일련번호</td>
