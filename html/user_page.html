@@ -2,6 +2,8 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel = "stylesheet" href = "../css/user_page.css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+		<script type="text/javascript" src="../js/findBookFromDB.js"></script>
 	</head>
 
 	<body>
@@ -9,21 +11,21 @@
 
 			<div id = "menu_area">
 				<p id = "search_guide_text">검색</p>
-				<form name = "search" action = "../php/search_book.php" method = "post">
+				<form name = "search" method = "post">
 					<input id = "search_textbox" type = "text" name = "input_text">
-					<input id = "search_button" type = "submit" value = "찾기">
+					<input id = "search_button" type = "button" value = "찾기" onclick = "search_book()">
 					<input id = "user_manage" type="button" onclick="location.href='user_manage_page.html'" value="내 정보">
 				</form>
 				<form name = "signOut" action = "../php/signOut.php" method = "post">
 					<input id = "log_out" type="submit" value="로그아웃">
 				</form>
+
 			</div>
 
 			<div id = "result_area">
-
+				<p><span id="abcde"></span></p>
 			</div>
 
 		</div>
-		<script src = "../js/user_page.js"/>
 	</body>
 </html>

@@ -34,6 +34,13 @@
 	height: 50px;
 	font-size: 20px;
 }
+#book_add_button{
+    width:100px;
+    height:50px;
+    font-size: 20px;
+    position: absolute;
+	right: 5%;
+}
 #book_manage_button{
 	position: absolute;
 	left: 3%;
