@@ -8,6 +8,15 @@ function search_book(){
         data: queryString,
         success:function(data){
             $('#abcde').text(data);
+            parse_result = JSON.parse(data);
+            console.log(parse_result);
+
+            for (var objVarJson in parse_result){
+            	console.log(parse_result[objVarJson]['title']);
+            }
+
+           // $('#abcde').text(jsonobj);
+            
         }
     });
     return false;
