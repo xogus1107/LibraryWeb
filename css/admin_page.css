@@ -41,6 +41,20 @@
     position: absolute;
 	right: 5%;
 }
+#book_modify_button{
+    width:100px;
+    height:50px;
+    font-size: 20px;
+    position: absolute;
+	right: 20%;
+}
+#book_rent_button{
+    width:100px;
+    height:50px;
+    font-size: 20px;
+    position: absolute;
+	right: 35%;
+}
 #book_manage_button{
 	position: absolute;
 	left: 3%;
