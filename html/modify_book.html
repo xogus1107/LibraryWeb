@@ -6,17 +6,18 @@
   <link rel="stylesheet" href="../css/add_book.css">
   <title>책 정보수정</title>
   <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+  <script type="text/javascript" src="../js/modifyBook.js"></script>
 
 </head>
 
 <body>
   <div id="add_book_box">
     <h3 id="title">책 정보 수정</h3>
-    <form name="modify_book_input" action="" method="post" onsubmit="">
+    <form name="modify_book_input" action="../php/modifyBook.php" method="post" onsubmit="return checkSubmit()">
       <table id="table">
           <tr>
           <td class="left_box">일련번호</td>
-          <td>해당일련번호
+          <td id = "serialNumber"></td>
         </tr>
         <tr>
           <td class="left_box">제목</td>
