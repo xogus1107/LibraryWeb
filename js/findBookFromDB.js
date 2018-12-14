@@ -8,6 +8,7 @@ function search_book(){
         data: queryString,
         success:function(data){
             //$('#abcde').text(data);
+            console.log(data);
             parse_result = JSON.parse(data);
             console.log(parse_result);
 
@@ -28,7 +29,7 @@ function search_book(){
                }
 
             }
-            
+
         }
     });
     return false;
@@ -65,4 +66,3 @@ function getTarget(num){
 
     return text;
 }
-

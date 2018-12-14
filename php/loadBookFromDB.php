@@ -20,13 +20,13 @@
 
 	}
 
-	$encoded = to_han(json_encode($return_array));
+	$encoded = json_encode($return_array);
 
 
 	echo $encoded;
 
 function han ($s) { return reset(json_decode('{"s":"'.$s.'"}')); }
 function to_han ($str) { return preg_replace('/(\\\u[a-f0-9]+)+/e','han("$0")',$str); }
- 
+
 
 ?>
