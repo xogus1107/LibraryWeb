@@ -7,7 +7,6 @@
     $address = $_POST['input_address'];
     $phone_number = $_POST['input_phone'];
 
-    $sql = "SELECT * FROM library.user WHERE id = '{$memberId}'";
     $sql = "UPDATE library.user set name='{$name}', birthday='{$birthday}', address='{$address}', phone_number='{$phone_number}' where id = '{$memberId}'";
 
     $res = $dbConnect->query($sql);
