@@ -9,7 +9,7 @@
 
 	$return_array = array();
 
-	$sql = "SELECT * FROM library.book where title like '%".$abc."%'";
+	$sql = "SELECT * FROM library.book where title like '%".$abc."%' or publisher like '%".$abc."%'";
 	$result = $dbConnect->query($sql);
 	$row_array = array();
 	while($row = $result->fetch_array(MYSQLI_ASSOC)){
