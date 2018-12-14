@@ -132,6 +132,7 @@ function rentBook(id, serialNumber) {
       if (json.res == 'bad') {
         alert(' 책 대여에 실패 했습니다.');
       } else {
+        window.location.href="admin_page_book.html";
         console.log('책 대여 성공');
       }
     },
