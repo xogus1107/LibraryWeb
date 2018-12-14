@@ -3,8 +3,8 @@
 		<meta charset="utf-8">
 		<link rel = "stylesheet" href = "../css/admin_page.css">
 		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+		<script type="text/javascript" src="../js/admin_book.js"></script>
 		<script type="text/javascript" src="../js/findBookFromDB.js"></script>
-	  <script type="text/javascript" src="../js/admin_book.js"></script>
 	</head>
 
 	<body>
@@ -15,7 +15,7 @@
 				<form name="signOut" action="../php/signOut.php" method="post">
 					<input id="log_out" type="submit" value="로그아웃">
 				</form>
-				<input id="book_rent_button" type="button" value = "책 대여" onclick="">
+				<input id="book_rent_button" type="button" value = "책 대여" onclick="rentalBook()">
 				<input id="book_modify_button" type="button" value = "책 수정" onclick="modifyBook()">
 				<input id="book_add_button" type="button" value = "책 추가" onclick="location.href='add_book.html'">
 			</div>
@@ -83,7 +83,6 @@
 		</div>
 		<script>search_book()</script>
 
-		<script>"search_book();"</script>
 
 	</body>
 </html>
