@@ -38,30 +38,39 @@
 
 
 #book_add_button{
-    width:200px;
+    width:165px;
     height:40px;
     font-size: 20px;
     position: absolute;
-	left: 57%;
+	left: 78%;
 	top: 55%;
 }
 #book_modify_button{
-    width:200px;
+    width:165px;
     height:40px;
     font-size: 20px;
     position: absolute;
-    left: 30%;
+    left: 53%;
     top : 55%;
 
 }
 #book_rent_button{
-    width:200px;
+    width:165px;
     height:40px;
     font-size: 20px;
     position: absolute;
 	left: 3%;
 	top : 55%;
 }
+#book_return_button{
+    width:165px;
+    height:40px;
+    font-size: 20px;
+    position: absolute;
+	left: 28%;
+	top : 55%;
+}
+
 #book_manage_button{
 	position: absolute;
 	left: 3%;
