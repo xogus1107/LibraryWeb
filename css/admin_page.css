@@ -1,12 +1,13 @@
 #page_layout{
 	width: 800px;
-	height: 800px;
+	height: 850px;
 	background-color: #E6E6E6;
 
 	position: absolute;
 	left: 50%;
 	margin: 0px 0px 0px -400px;
 }
+
 
 #log_out{
     width: 100px;
@@ -15,7 +16,7 @@
 
    position: absolute;
    left: 80%;
-   top: 50%;
+   top: 30%;
    margin: -15px 0px 0px 0px;
 
 }
@@ -31,33 +32,261 @@
 }
 .menu_buttons{
 	width: 200px;
-	height: 50px;
+	height: 40px;
 	font-size: 20px;
 }
+
+
 #book_add_button{
-    width:100px;
-    height:50px;
+    width:200px;
+    height:40px;
     font-size: 20px;
     position: absolute;
-	right: 5%;
+	left: 57%;
+	top: 55%;
+}
+#book_modify_button{
+    width:200px;
+    height:40px;
+    font-size: 20px;
+    position: absolute;
+    left: 30%;
+    top : 55%;
+
+}
+#book_rent_button{
+    width:200px;
+    height:40px;
+    font-size: 20px;
+    position: absolute;
+	left: 3%;
+	top : 55%;
 }
 #book_manage_button{
 	position: absolute;
 	left: 3%;
-	top: 15%;
+	top: 10%;
 }
 #user_manage_button{
 	position: absolute;
 	left: 30%;
-	top: 15%;
+	top: 10%;
+}
+
+
+#search_textbox{
+	width: 300px;
+	height: 30px;
+	font-size: 18px;
+
+	position: absolute;
+	left: 23%;
+	top: 75%;
+	margin: -15px 0px 0px -150px;
+}
+#search_button{
+	width: 100px;
+	height: 30px;
+	font-size: 18px;
+
+	position: absolute;
+	left: 43%;
+	top: 75%;
+	margin: -15px 0px 0px 0px;
+}
+
+
+.delete_button{
+    position: absolute;
+    right: 5%;
+    top 50%;
 }
 
 #result_area{
 	width: 780px;
-	height: 670px;
+	height: 720px;
 	background-color: #D8D8D8;
 
 	position: absolute;
 	left:10px;
 	top:120px;
+}
+
+
+.book_data{
+	width: 760px;
+	height: 100px;
+	background-color: #FAFAFA;
+
+}
+
+.book_info_text{
+	height: 20px;
+	font-size: 14px;
+
+}
+
+.book_title{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+
+.book_writer{
+	position: absolute;
+	top: 40px;
+	left: 10px;
+
+}
+
+.book_publisher{
+	position: absolute;
+	top: 70px;
+	left: 10px;
+
+}
+
+.book_total{
+	position: absolute;
+	top: 10px;
+	left: 300px;
+}
+
+.book_rented{
+	position: absolute;
+	top: 40px;
+	left: 300px;
+}
+
+
+#first_book{
+	position: absolute;
+ 	left: 10px;
+	top: 10px;
+}
+
+#second_book{
+	position: absolute;
+	left: 10px;
+	top: 130px;
+}
+
+#third_book{
+	position: absolute;
+	left: 10px;
+	top: 250px;
+}
+
+
+#fourth_book{
+	position: absolute;
+	left: 10px;
+	top: 370px;
+}
+
+#fifth_book{
+	position: absolute;
+	left: 10px;
+	top: 490px;
+}
+
+
+#sixth_book{
+	position: absolute;
+	left: 10px;
+	top: 610px;
+}
+
+
+
+
+.user_data{
+	width: 760px;
+	height: 100px;
+	background-color: #FAFAFA;
+    left :10px;
+}
+
+.user_info_text{
+	height: 20px;
+	font-size: 14px;
+
+}
+
+.user_name{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+
+.user_birthday{
+	position: absolute;
+	top: 40px;
+	left: 10px;
+
+}
+
+.user_address{
+	position: absolute;
+	top: 70px;
+	left: 10px;
+
+}
+
+.user_phonenumber{
+	position: absolute;
+	top: 10px;
+	left: 300px;
+}
+
+.user_rentbook{
+	position: absolute;
+	top: 40px;
+	left: 300px;
+}
+
+.user_latefee{
+    position: absolute;
+    top : 70px;
+    left: 300px;
+}
+
+#first_user{
+	position: absolute;
+ 	left: 10px;
+	top: 10px;
+}
+
+#second_user{
+	position: absolute;
+	left: 10px;
+	top: 130px;
+}
+
+#third_user{
+	position: absolute;
+	left: 10px;
+	top: 250px;
+}
+
+
+#fourth_user{
+	position: absolute;
+	left: 10px;
+	top: 370px;
+}
+
+#fifth_user{
+	position: absolute;
+	left: 10px;
+	top: 490px;
+}
+
+
+#sixth_user{
+	position: absolute;
+	left: 10px;
+	top: 610px;
 }
