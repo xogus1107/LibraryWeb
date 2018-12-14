@@ -4,6 +4,7 @@
 		<link rel = "stylesheet" href = "../css/admin_page.css">
 		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 		<script type="text/javascript" src="../js/findBookFromDB.js"></script>
+		<script type="text/javascript" src="../js/deleteBookFromDB.js"></script>
 	</head>
 
 	<body>
@@ -23,58 +24,70 @@
 
 
 				<div class = "book_data" id = "first_book">
+					<form name = "first_book_area" method = "post">
 					<div class = "book_info_text book_title">제목: <span id = "first_book_title"/> </div>
 					<div class = "book_info_text book_writer">작가: <span id = "first_book_writer"/> </div>
 					<div class = "book_info_text book_publisher">출판사: <span id = "first_book_publisher"/> </div>
 					<div class = "book_info_text book_total">총 권수: <span id = "first_book_total"/> </div>
 					<div class = "book_info_text book_rented">대여 중인 권수: <span id = "first_book_rented"/></div>
-					<div class = "delete_button"><input id="book_delete_button1" type="button" value="삭제" onclick=""></div>
+					<div class = "delete_button"><input id="book_delete_button1" type="button" value="삭제" onclick="delete_book_from_DB('first')"></div>
+					</form>
 				</div>
 
 
 				<div class = "book_data" id = "second_book">
+					<form name = "second_book_area" method = "post">
 					<div class = "book_info_text book_title">제목: <span id = "second_book_title"/> </div>
 					<div class = "book_info_text book_writer">작가: <span id = "second_book_writer"/> </div>
 					<div class = "book_info_text book_publisher">출판사: <span id = "second_book_publisher"/> </div>
 					<div class = "book_info_text book_total">총 권수: <span id = "second_book_total"/> </div>
 					<div class = "book_info_text book_rented">대여 중인 권수: <span id = "second_book_rented"/></div>
-					<div class = "delete_button"><input id="book_delete_button2" type="button" value="삭제" onclick=""></div>
+					<div class = "delete_button"><input id="book_delete_button2" type="button" value="삭제" onclick="delete_book_from_DB('second')"></div>
+					</form>
 				</div>
 
 				<div class = "book_data" id = "third_book">
+					<form name = "third_book_area" method = "post">
 					<div class = "book_info_text book_title">제목: <span id = "third_book_title"/> </div>
 					<div class = "book_info_text book_writer">작가: <span id = "third_book_writer"/> </div>
 					<div class = "book_info_text book_publisher">출판사: <span id = "third_book_publisher"/> </div>
 					<div class = "book_info_text book_total">총 권수: <span id = "third_book_total"/> </div>
 					<div class = "book_info_text book_rented">대여 중인 권수: <span id = "third_book_rented"/></div>
-					<div class = "delete_button"><input id="book_delete_button3" type="button" value="삭제" onclick=""></div>
+					<div class = "delete_button"><input id="book_delete_button3" type="button" value="삭제" onclick="delete_book_from_DB('third')"></div>
+					</form>
 				</div>
 
 				<div class = "book_data" id = "fourth_book">
+					<form name = "fourth_book_area" method = "post">
 					<div class = "book_info_text book_title">제목: <span id = "fourth_book_title"/> </div>
 					<div class = "book_info_text book_writer">작가: <span id = "fourth_book_writer"/> </div>
 					<div class = "book_info_text book_publisher">출판사: <span id = "fourth_book_publisher"/> </div>
 					<div class = "book_info_text book_total">총 권수: <span id = "fourth_book_total"/> </div>
 					<div class = "book_info_text book_rented">대여 중인 권수: <span id = "fourth_book_rented"/></div>
-					<div class = "delete_button"><input id="book_delete_button4" type="button" value="삭제" onclick=""></div>
+					<div class = "delete_button"><input id="book_delete_button4" type="button" value="삭제" onclick="delete_book_from_DB('fourth')"></div>
+					</form>
 				</div>
 
 				<div class = "book_data" id = "fifth_book">
+					<form name = "fifth_book_area" method = "post">
 					<div class = "book_info_text book_title">제목: <span id = "fifth_book_title"/> </div>
 					<div class = "book_info_text book_writer">작가: <span id = "fifth_book_writer"/> </div>
 					<div class = "book_info_text book_publisher">출판사: <span id = "fifth_book_publisher"/> </div>
 					<div class = "book_info_text book_total">총 권수: <span id = "fifth_book_total"/> </div>
 					<div class = "book_info_text book_rented">대여 중인 권수: <span id = "fifth_book_rented"/></div>
-					<div class = "delete_button"><input id="book_delete_button5" type="button" value="삭제" onclick=""></div>
+					<div class = "delete_button"><input id="book_delete_button5" type="button" value="삭제" onclick="delete_book_from_DB('fifth')"></div>
+					</form>
 				</div>
 
 				<div class = "book_data" id = "sixth_book">
+					<form name = "sixth_book_area" method = "post">
 					<div class = "book_info_text book_title">제목: <span id = "sixth_book_title"/> </div>
 					<div class = "book_info_text book_writer">작가: <span id = "sixth_book_writer"/> </div>
 					<div class = "book_info_text book_publisher">출판사: <span id = "sixth_book_publisher"/> </div>
 					<div class = "book_info_text book_total">총 권수: <span id = "sixth_book_total"/> </div>
 					<div class = "book_info_text book_rented">대여 중인 권수: <span id = "sixth_book_rented"/></div>
-					<div class = "delete_button"><input id="book_delete_button6" type="button" value="삭제" onclick=""></div>
+					<div class = "delete_button"><input id="book_delete_button6" type="button" value="삭제" onclick="delete_book_from_DB('sixth')"></div>
+					</form>
 				</div>
 			</div>
 
