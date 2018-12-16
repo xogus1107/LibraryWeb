@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"s",
+				"search_textbox"
+			],
+			[
+				"se",
+				"search_book"
+			],
+			[
 				"parse",
 				"parse_result"
 			],
@@ -72,26 +80,59 @@
 	"buffers":
 	[
 		{
-			"file": "php/signUp.php",
+			"file": "html/admin_page_book.html",
 			"settings":
 			{
-				"buffer_size": 1251,
+				"buffer_size": 4996,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "html/main.html",
+			"file": "css/admin_page.css",
 			"settings":
 			{
-				"buffer_size": 1020,
+				"buffer_size": 3227,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "html/find_idpw.html",
+			"file": "php/loadAllUserInfo.php",
 			"settings":
 			{
-				"buffer_size": 1034,
+				"buffer_size": 595,
+				"line_ending": "Windows",
+				"name": "<?php"
+			}
+		},
+		{
+			"file": "html/admin_page_user.html",
+			"settings":
+			{
+				"buffer_size": 4756,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/loadAllUserFromDB.js",
+			"settings":
+			{
+				"buffer_size": 1305,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/userInfoModifyForm.js",
+			"settings":
+			{
+				"buffer_size": 476,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/deleteBookFromDB.js",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		},
@@ -99,31 +140,7 @@
 			"file": "php/loadBookFromDB.php",
 			"settings":
 			{
-				"buffer_size": 749,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "html/user_page.html",
-			"settings":
-			{
-				"buffer_size": 957,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "php/loadUserInfo.php",
-			"settings":
-			{
-				"buffer_size": 543,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/find.js",
-			"settings":
-			{
-				"buffer_size": 1632,
+				"buffer_size": 772,
 				"line_ending": "Windows"
 			}
 		},
@@ -131,15 +148,15 @@
 			"file": "js/findBookFromDB.js",
 			"settings":
 			{
-				"buffer_size": 582,
+				"buffer_size": 1624,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "css/user_page.css",
+			"file": "html/user_page.html",
 			"settings":
 			{
-				"buffer_size": 1142,
+				"buffer_size": 4082,
 				"line_ending": "Windows"
 			}
 		}
@@ -168,6 +185,19 @@
 	},
 	"file_history":
 	[
+		"/C/APM_Setup/htdocs/LibraryWeb/php/loadUserInfo.php",
+		"/C/APM_Setup/htdocs/LibraryWeb/php/deleteBookFromDB.php",
+		"/C/Users/Manny/Desktop/2018년 2학기/웹프로그래밍/homework2/calculator_20142812.js",
+		"/C/APM_Setup/htdocs/LibraryWeb/js/find.js",
+		"/C/APM_Setup/htdocs/LibraryWeb/js/deleteBookFromDB.js/",
+		"/C/APM_Setup/htdocs/LibraryWeb/html/admin_page.html",
+		"/C/APM_Setup/htdocs/LibraryWeb/css/user_page.css",
+		"/C/APM_Setup/htdocs/LibraryWeb/php/include/dbconnect.php",
+		"/C/APM_Setup/htdocs/LibraryWeb/html/user_page.html",
+		"/C/APM_Setup/htdocs/LibraryWeb/html/find_idpw.html",
+		"/C/APM_Setup/htdocs/LibraryWeb/html/main.html",
+		"/C/APM_Setup/htdocs/LibraryWeb/php/signUp.php",
+		"/C/APM_Setup/htdocs/LibraryWeb/html/admin_page_book.html",
 		"/C/APM_Setup/htdocs/LibraryWeb/css/find_idpw.css",
 		"/C/APM_Setup/htdocs/LibraryWeb/css/main.css",
 		"/C/APM_Setup/htdocs/LibraryWeb/css/user_info_modify.css",
@@ -176,9 +206,7 @@
 		"/C/APM_Setup/htdocs/LibraryWeb/php/signIn.php",
 		"/C/APM_Setup/htdocs/LibraryWeb/php/time3.php",
 		"/C/APM_Setup/htdocs/LibraryWeb/js/findBookFromDB",
-		"/C/APM_Setup/htdocs/LibraryWeb/js/find.js",
 		"/C/APM_Setup/htdocs/LibraryWeb/php/signOut.php",
-		"/C/APM_Setup/htdocs/LibraryWeb/html/admin_page.html",
 		"/C/APM_Setup/htdocs/LibraryWeb/js/signUpForm.js",
 		"/C/APM_Setup/htdocs/homework3/LibraryWeb/php/findId.php",
 		"/C/APM_Setup/htdocs/homework3/LibraryWeb/php/findPw.php",
@@ -225,6 +253,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"header('Content-Type: text/html; charset=UTF-8');\n	include \"include/session.php\";\n	include \"include/dbConnect.php\";\n\n	$abc = $_POST['input_text'];\n\n	//echo \"input\".$abc.\"<br>\";\n\n	$return_array = array();\n\n	$sql = \"SELECT * FROM library.book where title like '%\".$abc.\"%' or publisher like '%\".$abc.\"%'\";\n	$result = $dbConnect->query($sql);\n	$row_array = array();\n	while($row = $result->fetch_array(MYSQLI_ASSOC)){\n		$row_array = $row;\n		array_push($return_array, $row_array);\n\n		//echo \"title: \".$row[title].\" writer: \".$row[writer].\"<br>\";\n\n	}\n",
 			"		\n"
 		],
 		"highlight": true,
@@ -243,30 +272,29 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "php/signUp.php",
+					"file": "html/admin_page_book.html",
 					"settings":
 					{
-						"buffer_size": 1251,
+						"buffer_size": 4996,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1094,
-								1094
+								263,
+								98
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -276,23 +304,23 @@
 				},
 				{
 					"buffer": 1,
-					"file": "html/main.html",
+					"file": "css/admin_page.css",
 					"settings":
 					{
-						"buffer_size": 1020,
+						"buffer_size": 3227,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								523,
-								523
+								328,
+								328
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -303,23 +331,24 @@
 				},
 				{
 					"buffer": 2,
-					"file": "html/find_idpw.html",
+					"file": "php/loadAllUserInfo.php",
 					"settings":
 					{
-						"buffer_size": 1034,
+						"buffer_size": 595,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6,
-								6
+								299,
+								299
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"auto_name": "<?php",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -330,18 +359,134 @@
 				},
 				{
 					"buffer": 3,
-					"file": "php/loadBookFromDB.php",
+					"file": "html/admin_page_user.html",
 					"settings":
 					{
-						"buffer_size": 749,
+						"buffer_size": 4756,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								749,
-								749
+								1869,
+								1869
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 225.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/loadAllUserFromDB.js",
+					"settings":
+					{
+						"buffer_size": 1305,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								71,
+								71
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "js/userInfoModifyForm.js",
+					"settings":
+					{
+						"buffer_size": 476,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "js/deleteBookFromDB.js",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "php/loadBookFromDB.php",
+					"settings":
+					{
+						"buffer_size": 772,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								346,
+								346
 							]
 						],
 						"settings":
@@ -357,108 +502,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "html/user_page.html",
-					"settings":
-					{
-						"buffer_size": 957,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								334,
-								334
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 3,
-			"sheets":
-			[
-				{
-					"buffer": 5,
-					"file": "php/loadUserInfo.php",
-					"settings":
-					{
-						"buffer_size": 543,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								543,
-								543
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "js/find.js",
-					"settings":
-					{
-						"buffer_size": 1632,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1097,
-								1097
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 360.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "js/findBookFromDB.js",
 					"settings":
 					{
-						"buffer_size": 582,
+						"buffer_size": 1624,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								582,
-								582
+								1126,
+								1624
 							]
 						],
 						"settings":
@@ -467,34 +523,35 @@
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 7.0,
-						"translation.y": 0.0,
+						"translation.x": 0.0,
+						"translation.y": 180.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "css/user_page.css",
+					"buffer": 9,
+					"file": "html/user_page.html",
 					"settings":
 					{
-						"buffer_size": 1142,
+						"buffer_size": 4082,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								775,
-								775
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 720.0,
+						"translation.y": 1080.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -530,7 +587,7 @@
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.518604651163,
 			1.0
 		],
 		"rows":

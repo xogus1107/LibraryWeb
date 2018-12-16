@@ -1,6 +1,5 @@
 function search_book(){
     var queryString = $("form[name=search]").serialize() ;
-
     $.ajax({
         url:'../php/loadBookFromDB.php',
         type:'post',
@@ -8,16 +7,27 @@ function search_book(){
         data: queryString,
         success:function(data){
             //$('#abcde').text(data);
-            console.log(data);
+            //console.log(data);
             parse_result = JSON.parse(data);
-            console.log(parse_result);
+            //console.log(parse_result);
+
+            var range = ['0', '1', '2', '3', '4', '5'];
+            for (i in range){
+                var text = getTarget(i);
+                console.log("var i :"+text);
+                $(text+'_book_title').text('');
+                $(text+'_book_writer').text('');
+                $(text+'_book_publisher').text('');
+                $(text+'_book_total').text('');
+                $(text+'_book_rented').text('');
+            }
 
             for (var objJson in parse_result){
                 if(objJson == '6')
                     break;
 
                var text = getTarget(objJson);
-               console.log(text);
+               //console.log(text);
                if (text == 'null')
                 return;
                else{
@@ -65,4 +75,16 @@ function getTarget(num){
     console.log("abcde : "+text);
 
     return text;
+}
+
+function clearTexts(){
+    for (var i = 0; i < 6; i ++){
+        var text = getTarget(i);
+        $(text+'_book_title').text("");
+        $(text+'_book_writer').text("");
+        $(text+'_book_publisher').text("");
+        $(text+'_book_total').text("");
+        $(text+'_book_rented').text("");
+    }
+
 }
