@@ -16,8 +16,10 @@
 				<form name="signOut" action="../php/signOut.php" method="post">
 					<input id="log_out" type="submit" value="로그아웃">
 				</form>
+				<form name="userfind" method = "post">
 				<input id = "search_textbox" type = "text" name = "input_text">
-				<input id = "search_button" type = "button" value = "유저찾기" onclick = "search_user()">
+				<input id = "search_button" type = "button" value = "유저찾기" onclick = "load_All_User()">
+				</form>
 			</div>
 
 			<div id = "result_area">

@@ -3,9 +3,25 @@
 	include "include/session.php";
 	include "include/dbConnect.php";
 
+
+
+	$abc = $_POST['input_text'];
+
 	$return_array = array();
 
-	$sql = "select * from library.user";
+
+	$sql = "
+	SELECT name, birthday, address, phone_number, title
+	FROM library.user
+	LEFT JOIN (
+		SELECT * 
+		FROM library.book
+		NATURAL JOIN library.rental
+		)CNT
+	ON library.user.id = CNT.id
+	where library.user.name like '%".$abc."%'";
+
+//	$sql = "select * from library.user";
 	$result = $dbConnect->query($sql);
 	$row_array = array();
 	while ($row = $result->fetch_array(MYSQLI_ASSOC)){
@@ -14,7 +30,7 @@
 	}
 
 
-	$encoded = json_encode($return_array);
+	$encoded = to_han(json_encode($return_array));
 
 
 	echo $encoded;
